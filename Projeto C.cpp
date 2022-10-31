@@ -1,0 +1,125 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+#include <locale.h>
+
+int op, qntd;
+
+void cervejas(){
+	printf("\n1 - Itaipava Cx:  R$25,00    ||   Und: R$1,50");
+	printf("\n2 - Devassa  Cx:  R$28,00    ||   Und: R$1,80");
+	printf("\n3 - Bohemia  Cx:  R$29,00    ||   Und: R$1,85");
+	printf("\n4 - Amstel   Cx:  R$30,00    ||   Und: R$2,10");
+	printf("\n5 - Schin    Cx:  R$20,00    ||   Und: R$1,20");
+	printf("\n6 - Skol     Cx:  R$22,00    ||   Und: R$1,30");
+	printf("\n\nTECLE ENTER\n");	
+}
+void refri(){
+	printf("\n1 - Pepsi     Engradado: R$35,00  ||  Und 1L: R$5,00  ||  Und 300 ML: 2,50");
+	printf("\n2 - Coca Cola Engradado: R$37,00  ||  Und 1L: R$5,50  ||  Und 300 ML: 3,00");
+	printf("\n3 - Fanta     Engradado: R$33,00  ||  Und 1L: R$4,50  ||  Und 300 ML: 2,00");
+	printf("\n\nTECLE ENTER\n");
+}
+void vodka(){
+	printf("\n1 - Absolut    Und: R$70,00");
+	printf("\n2 - Sminorff   Und: R$40,00");
+	printf("\n3 - Natasha    Und: R$30,00");
+	printf("\n\nTECLE ENTER\n");
+	
+}
+void whisky(){
+	printf("\n1 - Red Label    Und: R$80,00");
+	printf("\n2 - Jack Daniels Und: R$120,00");
+	printf("\n3 - Buchanans    Und: R$140,00");
+	printf("\n\nTECLE ENTER\n");
+}
+void energ(){
+	printf("\n1 - Monster   473 ML Caixa c/ 6 Unidades: R$40,00    ||  Und 473 ML: R$7,00");
+	printf("\n2 - Red Bull  473 ML Caixa c/ 6 Unidades: R$43,00    ||  Und 473 ML: R$7,50");
+	printf("\n3 - Fusion    1L Engradado c/ 6 Unidades: R$35,00    ||  Und 1L: R$6,00");
+	printf("\n4 - Energy Up 1L Engradado c/ 6 Unidades: R$30,00    ||  Und 1L: R$5,00");
+	printf("\n\nTECLE ENTER\n");
+}
+void agua(){
+	printf("\n1 - Indaia Galão 20L  R$18,00  ||  Und 1L: R$3,50   ||  Und 500 ML: R$2,00");
+	printf("\n2 - Crystal Galão 20L R$16,00  ||  Und 1L: R$3,20   ||  Und 500 ML: R$1,80");
+	printf("\n\nTECLE ENTER\n");
+}
+void suco(){
+	printf("\n1 - Citrus Und 1L: R$4,00  ||  Und 500 ML: R$2,00");
+	printf("\n2 - Skinka Und 1L: R$3,50  ||  Und 500 ML: R$1,75");
+	printf("\n3 - Ades   Und 1L: R$3,00  ||  Und 500 ML: R$1,50");
+	printf("\n\nTECLE ENTER\n");
+}
+
+/*struct ficha{
+	char nome [30];
+	int tel;
+	char ender [100];
+};
+
+typedef struct ficha ficha; */
+
+
+main(){
+setlocale(LC_ALL, "");
+/*ficha cadastro;
+	printf("Nome: ");
+	scanf("%s", &cadastro.nome);
+	printf("Telefone: ");
+	scanf("%d", &cadastro.tel);
+	printf("Endereco: ");
+	scanf("%s", &cadastro.ender);*/
+
+
+do{
+	
+	system("cls");
+	printf("\n-----Bem Vindo ao depósito de Bebidas-----");
+	printf("\n1 - Cervejas\n2 - Refrigerantes\n3 - Vodkas\n4 - Whisky\n5 - Energéticos\n6 - Água\n7 - Sucos\n8 - Sair");
+	printf("\nDigite sua opção: ");
+	scanf("%d", &op);
+
+
+
+switch (op){
+	case 1:
+		system("cls");
+		cervejas();
+		break;	
+	case 2: 
+		system("cls");
+		refri();
+		break;
+	case 3: 
+		system("cls");
+		vodka();
+		break;
+	case 4: 
+		system("cls");
+		whisky();
+		break;
+	case 5: 
+		system("cls");
+		energ();
+		break;
+	case 6: 
+		system("cls");
+		agua();
+		break;
+	case 7: 
+		system("cls");
+		suco();
+		break;
+}
+
+getchar();
+getchar();
+
+
+}while (op!=8);
+
+
+
+}
+	
